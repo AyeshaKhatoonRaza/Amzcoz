@@ -10,6 +10,7 @@ import Services from './pages/Services/Services'
 import About from './pages/About/About'
 import Contact from './pages/Contact/Contact'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
+import { ThemeProvider } from './contexts/ThemeContext'
 import './App.css'
 
 function App() {
@@ -26,24 +27,26 @@ function App() {
 
   return (
     <HelmetProvider>
-      <Router>
-        <div className="App">
-          <Header />
-          <main>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<Navigate to="/" replace />} />
-            </Routes>
-          </main>
-          <Footer />
-          <ScrollToTop show={showScrollTop} />
-          <Analytics />
-        </div>
-      </Router>
+      <ThemeProvider>
+        <Router>
+          <div className="App">
+            <Header />
+            <main>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="*" element={<Navigate to="/" replace />} />
+              </Routes>
+            </main>
+            <Footer />
+            <ScrollToTop show={showScrollTop} />
+            <Analytics />
+          </div>
+        </Router>
+      </ThemeProvider>
     </HelmetProvider>
   )
 }

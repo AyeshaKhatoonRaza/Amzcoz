@@ -6,6 +6,7 @@ import Button from '../Button/Button'
 import Modal from '../Modal/Modal'
 import LeadForm from '../LeadForm/LeadForm'
 import SuccessPopup from '../SuccessPopup/SuccessPopup'
+import ThemeToggle from '../ThemeToggle/ThemeToggle'
 import './Header.css'
 
 const Header = () => {
@@ -87,6 +88,7 @@ const Header = () => {
             </nav>
 
             <div className="header-actions">
+              <ThemeToggle />
               <Button variant="primary" size="medium" onClick={handleAuditRequest}>
                 Free Audit
               </Button>

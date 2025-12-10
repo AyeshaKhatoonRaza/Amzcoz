@@ -4,10 +4,20 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.8);
+  background: var(--glass-bg);
   backdrop-filter: blur(15px);
   transition: all 0.3s ease;
   border-bottom: 1px solid var(--glass-border);
+}
+
+.light-theme .header {
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.light-theme .header.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: var(--shadow-md);
 }
 
 /* Force desktop nav hidden when mobile menu is open (any width) */
@@ -108,6 +118,10 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.header-actions .theme-toggle {
+  margin-right: 0.5rem;
 }
 
 .mobile-menu-toggle {

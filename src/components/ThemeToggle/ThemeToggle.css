@@ -1,0 +1,119 @@
+.theme-toggle {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  overflow: visible;
+}
+
+.theme-toggle-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover .theme-toggle-track {
+  background: var(--glass-bg);
+  border-color: var(--accent-blue);
+  box-shadow: var(--glow-blue);
+}
+
+.theme-toggle-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  background: var(--accent-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(96, 165, 250, 0.3);
+}
+
+.dark-theme .theme-toggle-thumb {
+  transform: translateX(30px);
+}
+
+.theme-icon {
+  color: white;
+  font-size: 10px;
+  transition: all 0.3s ease;
+}
+
+.sun-icon {
+  animation: rotateIn 0.3s ease;
+}
+
+.moon-icon {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes rotateIn {
+  from {
+    transform: rotate(-180deg) scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .theme-toggle {
+    width: 50px;
+    height: 25px;
+  }
+
+  .theme-toggle-track {
+    border-radius: 12.5px;
+  }
+
+  .theme-toggle-thumb {
+    width: 18px;
+    height: 18px;
+    top: 2.5px;
+    left: 2.5px;
+  }
+
+  .dark-theme .theme-toggle-thumb {
+    transform: translateX(25px);
+  }
+
+  .theme-icon {
+    font-size: 8px;
+  }
+}
+
+/* Focus styles for accessibility */
+.theme-toggle:focus {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+}
+
+.theme-toggle:focus:not(:focus-visible) {
+  outline: none;
+}
