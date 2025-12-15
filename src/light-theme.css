@@ -1,0 +1,864 @@
+/* ========================================
+   LIGHT THEME OVERRIDES FOR ALL PAGES
+   ======================================== */
+
+/* ===== Home Page Light Theme ===== */
+
+/* Stats Section */
+.light-theme .stats-section {
+    background: radial-gradient(1200px 600px at 50% -10%, rgba(37, 99, 235, 0.08), transparent 60%),
+        linear-gradient(180deg, rgba(248, 250, 252, 0.98) 0%, rgba(248, 250, 252, 1) 100%);
+    border-top: 1px solid rgba(96, 165, 250, 0.18);
+    border-bottom: 1px solid rgba(96, 165, 250, 0.18);
+}
+
+.light-theme .stats-section .section-header h2,
+.light-theme .stats-section .section-header p {
+    color: #475569;
+}
+
+.light-theme .stats-band {
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .stat-item {
+    border-left-color: rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .stat-item:hover,
+.light-theme .stat-item:focus-visible {
+    background: rgba(37, 99, 235, 0.06);
+    box-shadow: 0 18px 42px -28px rgba(37, 99, 235, 0.35);
+}
+
+.light-theme .stat-item::before {
+    background: radial-gradient(circle at top, rgba(37, 99, 235, 0.25), transparent 70%);
+}
+
+.light-theme .stat-value {
+    color: #0f172a;
+}
+
+.light-theme .stat-label {
+    color: rgba(71, 85, 105, 0.85);
+}
+
+/* CTA Section */
+.light-theme .cta-section {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.06), rgba(96, 165, 250, 0.04));
+    border-top: 1px solid rgba(96, 165, 250, 0.25);
+    border-bottom: 1px solid rgba(96, 165, 250, 0.25);
+}
+
+.light-theme .cta-section .cta-content {
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.light-theme .cta-content h2 {
+    color: #0f172a;
+}
+
+.light-theme .cta-content p {
+    color: #475569;
+}
+
+.light-theme .cta-pill {
+    color: #1e40af;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(56, 189, 248, 0.12));
+    border: 1px solid rgba(37, 99, 235, 0.25);
+}
+
+/* Testimonial Cards */
+.light-theme .testimonial-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(100, 116, 139, 0.25);
+}
+
+.light-theme .testimonial-card:hover {
+    border-color: rgba(37, 99, 235, 0.45);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15);
+}
+
+.light-theme .testimonial-text {
+    color: rgba(30, 41, 59, 0.9);
+}
+
+.light-theme .author-avatar {
+    background: rgba(241, 245, 249, 1);
+    border: 1px solid rgba(100, 116, 139, 0.35);
+}
+
+.light-theme .author-name {
+    color: #1e293b;
+}
+
+.light-theme .author-company {
+    color: rgba(100, 116, 139, 0.9);
+}
+
+/* ===== Footer Light Theme ===== */
+.light-theme .footer {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .footer-description,
+.light-theme .footer-link,
+.light-theme .contact-link,
+.light-theme .contact-text {
+    color: #64748b;
+}
+
+.light-theme .footer-link:hover,
+.light-theme .contact-link:hover {
+    color: #2563eb;
+    text-shadow: none;
+}
+
+.light-theme .footer-title {
+    color: #1e293b;
+}
+
+.light-theme .social-link {
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    color: #2563eb;
+}
+
+.light-theme .social-link:hover {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.light-theme .contact-icon {
+    color: #2563eb;
+    filter: none;
+}
+
+.light-theme .footer-bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .footer-bottom-content,
+.light-theme .legal-link {
+    color: #64748b;
+}
+
+.light-theme .legal-link:hover {
+    color: #2563eb;
+    text-shadow: none;
+}
+
+/* ===== Services Page Light Theme ===== */
+.light-theme .amazon-account-section,
+.light-theme .amazon-ad-section {
+    background: radial-gradient(circle at top, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 1) 60%, rgba(236, 242, 252, 1) 100%);
+    color: #475569;
+}
+
+.light-theme .amazon-account-section {
+    border-top: 1px solid rgba(37, 99, 235, 0.15);
+}
+
+.light-theme .aam-summary-card {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(37, 99, 235, 0.15);
+}
+
+.light-theme .aam-summary-card h3 {
+    color: #0f172a;
+}
+
+.light-theme .aam-summary-card p {
+    color: rgba(71, 85, 105, 0.85);
+}
+
+.light-theme .aam-summary-card:hover {
+    border-color: rgba(79, 70, 229, 0.25);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.light-theme .aas-section-intro h2,
+.light-theme .aas-content-block h3,
+.light-theme .contact-benefits h3,
+.light-theme .aam-feature-groups h3 {
+    color: #0f172a;
+}
+
+.light-theme .aas-section-intro p,
+.light-theme .aas-content-block>p {
+    color: rgba(71, 85, 105, 0.85);
+}
+
+.light-theme .aas-content-block {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(37, 99, 235, 0.18);
+    box-shadow: 0 26px 68px -28px rgba(37, 99, 235, 0.08);
+}
+
+.light-theme .aas-feature-card {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(37, 99, 235, 0.12);
+    box-shadow: inset 0 0 0 1px rgba(100, 116, 139, 0.06);
+}
+
+.light-theme .aas-panel {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(37, 99, 235, 0.18);
+    box-shadow: 0 24px 60px -28px rgba(37, 99, 235, 0.08);
+}
+
+.light-theme .aas-inline-insight {
+    background: rgba(248, 250, 252, 0.9);
+    border: 1px solid rgba(37, 99, 235, 0.18);
+}
+
+.light-theme .aas-insight-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(37, 99, 235, 0.15);
+}
+
+.light-theme .aas-insight-card h5,
+.light-theme .aas-process-card h5 {
+    color: #1e293b;
+}
+
+.light-theme .aas-insight-card p,
+.light-theme .aas-process-card p {
+    color: rgba(71, 85, 105, 0.85);
+}
+
+.light-theme .aas-insight-index,
+.light-theme .aas-process-index {
+    color: rgba(100, 116, 139, 0.75);
+}
+
+.light-theme .aas-process-card {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(37, 99, 235, 0.15);
+}
+
+.light-theme .aas-feature-card:hover {
+    border-color: rgba(79, 70, 229, 0.35);
+    box-shadow: 0 22px 48px -26px rgba(37, 99, 235, 0.35);
+}
+
+.light-theme .aas-feature-list--stack .aas-feature-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(37, 99, 235, 0.15);
+}
+
+.light-theme .aas-feature-card--minimal {
+    background: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(100, 116, 139, 0.2);
+}
+
+.light-theme .aas-feature-content h4 {
+    color: #1e293b;
+}
+
+.light-theme .aas-feature-content p,
+.light-theme .aas-feature-content ul {
+    color: rgba(71, 85, 105, 0.85);
+}
+
+.light-theme .cta-box {
+    background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+    color: #0f172a;
+    border: 1px solid rgba(37, 99, 235, 0.25);
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.12);
+}
+
+.light-theme .cta-box h2 {
+    color: #0f172a;
+}
+
+.light-theme .cta-box p {
+    color: rgba(15, 23, 42, 0.85);
+}
+
+/* ===== Portfolio Page Light Theme ===== */
+.light-theme .portfolio-page {
+    background: #f8fafc;
+}
+
+.light-theme .portfolio-hero {
+    background: linear-gradient(180deg, rgba(96, 165, 250, 0.08) 0%, transparent 100%);
+}
+
+.light-theme .portfolio-hero-content h1 {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.light-theme .section-header h2 {
+    color: #0f172a;
+}
+
+.light-theme .section-header p {
+    color: #64748b;
+}
+
+.light-theme .brand-card,
+.light-theme .result-card,
+.light-theme .report-card,
+.light-theme .capability-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .brand-card:hover,
+.light-theme .result-card:hover,
+.light-theme .report-card:hover,
+.light-theme .capability-card:hover {
+    border-color: rgba(37, 99, 235, 0.35);
+    box-shadow: 0 25px 50px rgba(37, 99, 235, 0.12);
+    background: rgba(255, 255, 255, 1);
+}
+
+.light-theme .brand-logo-wrapper {
+    background: rgba(248, 250, 252, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.light-theme .brand-info h3,
+.light-theme .report-card h3,
+.light-theme .capability-card h3,
+.light-theme .sample-card h3,
+.light-theme .result-card h3 {
+    color: #0f172a;
+}
+
+.light-theme .brand-placeholder,
+.light-theme .report-description,
+.light-theme .capability-card p,
+.light-theme .sample-card p,
+.light-theme .result-card p {
+    color: #64748b;
+}
+
+.light-theme .result-icon,
+.light-theme .report-icon,
+.light-theme .capability-icon,
+.light-theme .sample-icon {
+    background: rgba(37, 99, 235, 0.12);
+    border: 1px solid rgba(37, 99, 235, 0.18);
+    color: #2563eb;
+}
+
+.light-theme .result-value,
+.light-theme .result-card__header h3 {
+    color: #0f172a;
+}
+
+.light-theme .result-timeframe,
+.light-theme .chart-bar__label {
+    color: #64748b;
+}
+
+.light-theme .chart-bar__track {
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .chart-bar__value {
+    color: #0f172a;
+}
+
+.light-theme .result-graph {
+    background: rgba(248, 250, 252, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.light-theme .sample-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .sample-card:hover {
+    box-shadow: 0 35px 65px rgba(37, 99, 235, 0.15);
+    border-color: rgba(37, 99, 235, 0.35);
+}
+
+/* ===== About Page Light Theme ===== */
+.light-theme .mission-card,
+.light-theme .achievement-card,
+.light-theme .value-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .mission-card:hover,
+.light-theme .achievement-card:hover,
+.light-theme .value-card:hover {
+    background: rgba(255, 255, 255, 1);
+    border-color: rgba(37, 99, 235, 0.35);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.15);
+}
+
+.light-theme .mission-card h2,
+.light-theme .achievement-value,
+.light-theme .value-card h3 {
+    color: #0f172a;
+}
+
+.light-theme .mission-card p,
+.light-theme .achievement-label,
+.light-theme .value-card p {
+    color: #64748b;
+}
+
+.light-theme .additional-feature {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .additional-feature:hover {
+    border-color: rgba(37, 99, 235, 0.35);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.12);
+}
+
+.light-theme .feature-content h3 {
+    color: #0f172a;
+}
+
+.light-theme .feature-content p {
+    color: #64748b;
+}
+
+.light-theme .certifications-box {
+    background: rgba(219, 234, 254, 0.5);
+    border: 1px solid rgba(37, 99, 235, 0.25);
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.12);
+}
+
+.light-theme .certifications-box:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 251, 255, 0.9) 100%);
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.2);
+}
+
+.light-theme .certifications-box h3 {
+    color: #0f172a;
+}
+
+.light-theme .certification-badge {
+    background: rgba(37, 99, 235, 0.12);
+    border: 1px solid rgba(37, 99, 235, 0.25);
+    color: #1e40af;
+}
+
+.light-theme .certification-badge:hover {
+    background: rgba(37, 99, 235, 0.25);
+    border-color: rgba(37, 99, 235, 0.45);
+    color: #0f172a;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.25);
+}
+
+.light-theme .certification-badge svg {
+    color: #2563eb;
+}
+
+.light-theme .certification-badge:hover svg {
+    color: #1e40af;
+}
+
+/* ===== Contact Page Light Theme ===== */
+.light-theme .contact-intro {
+    background: #dbeafe;
+    border: 1px solid rgba(37, 99, 235, 0.35);
+}
+
+.light-theme .contact-intro h2,
+.light-theme .contact-intro p {
+    color: #0f172a;
+}
+
+.light-theme .contact-info-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .contact-info-card:hover {
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.15);
+    border-color: rgba(37, 99, 235, 0.35);
+}
+
+.light-theme .info-content h3 {
+    color: #0f172a;
+}
+
+.light-theme .info-link,
+.light-theme .info-text {
+    color: #64748b;
+}
+
+.light-theme .info-link:hover {
+    color: #2563eb;
+    text-shadow: none;
+}
+
+.light-theme .service-regions {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .service-regions h3 {
+    color: #0f172a;
+}
+
+.light-theme .region-badge {
+    background: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    color: #0f172a;
+}
+
+.light-theme .region-badge:hover {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.light-theme .contact-benefits {
+    background: radial-gradient(140% 140% at 5% -15%, rgba(37, 99, 235, 0.15) 0%, rgba(248, 250, 252, 0.95) 45%, rgba(241, 245, 249, 1) 100%);
+    color: #475569;
+    border: 1px solid rgba(37, 99, 235, 0.25);
+    box-shadow: 0 32px 70px -28px rgba(37, 99, 235, 0.15);
+}
+
+.light-theme .benefits-eyebrow {
+    color: #1e40af;
+    background: rgba(37, 99, 235, 0.12);
+}
+
+.light-theme .contact-benefits h3 {
+    color: #0f172a;
+}
+
+.light-theme .benefits-subtitle {
+    color: rgba(71, 85, 105, 0.85);
+}
+
+.light-theme .benefit-card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(37, 99, 235, 0.15);
+    box-shadow: inset 0 0 0 1px rgba(100, 116, 139, 0.05);
+}
+
+.light-theme .benefit-card:hover {
+    box-shadow: 0 24px 50px -24px rgba(37, 99, 235, 0.35);
+    border-color: rgba(79, 70, 229, 0.35);
+}
+
+.light-theme .benefit-content h4 {
+    color: #1e293b;
+}
+
+.light-theme .benefit-content p {
+    color: rgba(71, 85, 105, 0.85);
+}
+
+.light-theme .benefit-index {
+    color: rgba(100, 116, 139, 0.75);
+}
+
+.light-theme .form-container {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .form-header h2 {
+    color: #0f172a;
+}
+
+.light-theme .form-header p {
+    color: #64748b;
+}
+
+.light-theme .additional-feature {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .additional-feature:hover {
+    border-color: rgba(37, 99, 235, 0.35);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.12);
+}
+
+.light-theme .faq-item {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .faq-item:hover {
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.12);
+    border-color: rgba(37, 99, 235, 0.35);
+}
+
+.light-theme .faq-item h3 {
+    color: #0f172a;
+}
+
+.light-theme .faq-item p {
+    color: #64748b;
+}
+
+/* ===== Common Component Light Theme ===== */
+.light-theme .service-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .service-card:hover {
+    border-color: rgba(37, 99, 235, 0.35);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.15);
+    background: rgba(255, 255, 255, 1);
+}
+
+.light-theme .service-card h3 {
+    color: #0f172a;
+}
+
+.light-theme .service-card>p {
+    color: #64748b;
+}
+
+.light-theme .service-features li {
+    color: #475569;
+}
+
+.light-theme .benefit-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .benefit-card:hover {
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.12);
+    border-color: rgba(37, 99, 235, 0.35);
+}
+
+.light-theme .benefit-card h3 {
+    color: #0f172a;
+}
+
+.light-theme .benefit-card p {
+    color: #64748b;
+}
+
+.light-theme .service-detail-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .service-detail-card:hover {
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.12);
+    border-color: rgba(37, 99, 235, 0.35);
+}
+
+.light-theme .service-detail-header {
+    background: rgba(37, 99, 235, 0.04);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.light-theme .service-detail-title h2 {
+    color: #0f172a;
+}
+
+.light-theme .service-detail-title p {
+    color: #64748b;
+}
+
+.light-theme .service-detail-section h3 {
+    color: #0f172a;
+}
+
+.light-theme .feature-item {
+    background: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    color: #0f172a;
+}
+
+.light-theme .feature-item:hover {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.light-theme .feature-item span {
+    color: inherit;
+}
+
+.light-theme .check-icon {
+    color: #2563eb;
+}
+
+.light-theme .feature-item:hover .check-icon {
+    color: #ffffff;
+}
+
+.light-theme .process-step {
+    background: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.light-theme .process-step:hover {
+    background: rgba(37, 99, 235, 0.12);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
+    border-color: rgba(37, 99, 235, 0.35);
+}
+
+.light-theme .step-text {
+    color: #0f172a;
+}
+
+.light-theme .service-detail-footer {
+    background: rgba(37, 99, 235, 0.04);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* ===== Button Component Light Theme ===== */
+.light-theme .btn-primary {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.light-theme .btn-primary:hover {
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+}
+
+.light-theme .btn-secondary {
+    background: rgba(0, 0, 0, 0.03);
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+.light-theme .btn-secondary:hover {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.light-theme .btn-outline {
+    background: transparent;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+.light-theme .btn-outline:hover {
+    background: rgba(37, 99, 235, 0.08);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+}
+
+.light-theme .btn-ghost {
+    background: transparent;
+    color: #2563eb;
+}
+
+.light-theme .btn-ghost:hover {
+    background: rgba(37, 99, 235, 0.08);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+}
+
+/* ===== Modal Component Light Theme ===== */
+.light-theme .modal-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.light-theme .modal {
+    background-color: #ffffff;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.light-theme .modal-header {
+    background: rgba(248, 250, 252, 0.95);
+    border-bottom: 1px solid rgba(100, 116, 139, 0.15);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.light-theme .modal-title {
+    color: #0f172a;
+}
+
+.light-theme .modal-close {
+    color: #64748b;
+}
+
+.light-theme .modal-close:hover {
+    background-color: rgba(37, 99, 235, 0.08);
+    color: #2563eb;
+}
+
+/* ===== LeadForm Component Light Theme ===== */
+.light-theme .lead-form {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .form-label {
+    color: #0f172a;
+}
+
+.light-theme .form-input,
+.light-theme .form-select,
+.light-theme .form-textarea {
+    color: #0f172a;
+    background-color: #f8fafc;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.light-theme .form-input:focus,
+.light-theme .form-select:focus,
+.light-theme .form-textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+    background-color: #ffffff;
+}
+
+.light-theme .form-input::placeholder,
+.light-theme .form-textarea::placeholder {
+    color: #94a3b8;
+}
+
+.light-theme .form-success h3 {
+    color: #0f172a;
+}
+
+.light-theme .form-success p {
+    color: #64748b;
+}
+
+.light-theme .form-note {
+    color: #64748b;
+}
+
+/* ===== MoonGalaxy Component Light Theme ===== */
+.light-theme .brand-backdrop {
+    color: #0f172a;
+}
+
+.light-theme .hero-tagline {
+    color: #64748b;
+}
+
+/* ===== Service Card Hover Effects Light Theme ===== */
+.light-theme .service-card::after {
+    background: linear-gradient(45deg, #2563eb, #1e40af, #2563eb);
+}
+
+/* ===== SuccessPopup Light Theme ===== */
+.light-theme .success-popup-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Additional global light theme fixes */
+.light-theme .bg-light {
+    background: linear-gradient(180deg, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 1) 100%);
+}

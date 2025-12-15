@@ -6,12 +6,26 @@
   border-bottom: 1px solid rgba(148, 163, 184, 0.12);
 }
 
+.light-theme .testimonials-section {
+  background: linear-gradient(180deg, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 1) 100%);
+  border-top: 1px solid rgba(148, 163, 184, 0.25);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+}
+
 .testimonials-section .section-header h2 {
   color: #ffffff;
 }
 
+.light-theme .testimonials-section .section-header h2 {
+  color: #1e293b;
+}
+
 .testimonials-section .section-header p {
   color: rgba(226, 232, 240, 0.8);
+}
+
+.light-theme .testimonials-section .section-header p {
+  color: rgba(100, 116, 139, 0.9);
 }
 
 /* Achievements (stats): distinct panel background */
