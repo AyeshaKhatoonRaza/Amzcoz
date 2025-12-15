@@ -858,7 +858,206 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+
 /* Additional global light theme fixes */
 .light-theme .bg-light {
     background: linear-gradient(180deg, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 1) 100%);
+}
+
+/* ===== Additional Portfolio & Services Dark Background Fixes ===== */
+
+/* Portfolio - Client Report Section */
+.light-theme .client-report-section {
+    background: radial-gradient(circle at top, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 1) 60%);
+}
+
+.light-theme .client-report-brand__title {
+    color: #0f172a;
+}
+
+.light-theme .client-report-image-button::after {
+    background: rgba(255, 255, 255, 0.95);
+    color: #0f172a;
+}
+
+.light-theme .client-report-image {
+    border: 1px solid rgba(100, 116, 139, 0.15);
+    box-shadow: 0 25px 45px rgba(37, 99, 235, 0.08);
+}
+
+.light-theme .image-modal {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.light-theme .image-modal__close {
+    background: rgba(15, 23, 42, 0.08);
+    color: #0f172a;
+}
+
+.light-theme .image-modal__close:hover {
+    background: rgba(37, 99, 235, 0.15);
+    color: #2563eb;
+}
+
+.light-theme .image-modal__image {
+    border: 1px solid rgba(100, 116, 139, 0.2);
+    box-shadow: 0 35px 65px rgba(37, 99, 235, 0.12);
+}
+
+.light-theme .image-modal__caption {
+    color: #64748b;
+}
+
+/* Portfolio - Results Section */
+.light-theme .results-section {
+    background: linear-gradient(180deg, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 1) 100%);
+}
+
+/* Portfolio - Reports Section */
+.light-theme .reports-section {
+    background: linear-gradient(180deg, rgba(241, 245, 249, 1) 0%, rgba(248, 250, 252, 0.95) 100%);
+}
+
+.light-theme .report-date {
+    background: rgba(0, 0, 0, 0.05);
+    color: #64748b;
+}
+
+/* Portfolio - Sections */
+.light-theme .brands-section,
+.light-theme .capabilities-section {
+    background: #f8fafc;
+}
+
+.light-theme .samples-section {
+    background: linear-gradient(180deg, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 1) 100%);
+}
+
+/* Services - Header */
+.light-theme .services-header {
+    background: transparent;
+}
+
+.light-theme .services-header-content h1 {
+    color: #0f172a;
+}
+
+.light-theme .services-subtitle {
+    color: #64748b;
+}
+
+.light-theme .header-stat {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .header-stat .stat-value {
+    color: #0f172a;
+}
+
+.light-theme .header-stat .stat-label {
+    color: #64748b;
+}
+
+/* Services - AAM CTA */
+.light-theme .aam-cta {
+    background: rgba(248, 250, 252, 0.7);
+    border: 1px solid rgba(37, 99, 235, 0.15);
+}
+
+.light-theme .aam-cta p {
+    color: rgba(71, 85, 105, 0.85);
+}
+
+/* Services - AAS Conclusion */
+.light-theme .aas-conclusion p {
+    color: rgba(71, 85, 105, 0.85);
+}
+
+/* All section headers */
+.light-theme .services-header-content h1,
+.light-theme .about-header-content h1,
+.light-theme .contact-header-content h1 {
+    color: #0f172a;
+}
+
+.light-theme .about-subtitle,
+.light-theme .contact-subtitle {
+    color: #64748b;
+}
+
+/* Portfolio - Additional Elements */
+.light-theme .brand-category {
+    background: rgba(37, 99, 235, 0.12);
+    color: #1e40af;
+}
+
+.light-theme .metric-badge {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(37, 99, 235, 0.08));
+    border: 1px solid rgba(37, 99, 235, 0.25);
+    color: #1e40af;
+}
+
+.light-theme .report-download {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #ffffff;
+}
+
+.light-theme .download-btn {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #ffffff;
+}
+
+.light-theme .download-btn:hover {
+    background: linear-gradient(135deg, #1e40af, #1e3a8a);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+}
+
+/* Capability Lists */
+.light-theme .capability-card li {
+    color: #475569;
+}
+
+.light-theme .capability-card li::before {
+    background: linear-gradient(135deg, #2563eb, #60a5fa);
+    box-shadow: 0 0 10px rgba(37, 99, 235, 0.4);
+}
+
+/* Services - Insight Cards Hover */
+.light-theme .aas-insight-card:hover {
+    box-shadow: 0 18px 42px -20px rgba(37, 99, 235, 0.35);
+}
+
+.light-theme .aas-process-card:hover {
+    box-shadow: 0 18px 42px -20px rgba(37, 99, 235, 0.35);
+}
+
+/* About Header */
+.light-theme .about-header {
+    background: transparent;
+}
+
+/* Contact Header */
+.light-theme .contact-header {
+    background: transparent;
+}
+
+/* Team Stats */
+.light-theme .team-intro p {
+    color: #64748b;
+}
+
+.light-theme .team-stat {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* About - Header Section */
+.light-theme .about-header-background {
+    background: transparent;
+}
+
+/* Contact - Header Section */
+.light-theme .contact-header-background {
+    background: transparent;
 }
