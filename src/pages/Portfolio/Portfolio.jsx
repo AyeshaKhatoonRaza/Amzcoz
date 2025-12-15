@@ -389,9 +389,9 @@ const Portfolio = () => {
               <div className="sample-icon">
                 <FaChartLine />
               </div>
-              <h3>Amazon Infographics</h3>
+              <h3>Infographics & A+</h3>
               <p>Professional infographics designed for Amazon product listings and brand storytelling</p>
-              <button className="download-btn" onClick={() => window.open('https://drive.google.com/drive/folders/1EBrYSMBhlQXhMgg5r_gMj9teoFGyrU26?usp=sharing', '_blank')}>
+              <button className="download-btn" onClick={() => window.open('https://drive.google.com/drive/folders/1oiJGNJqF_Kg_sTJOA9vfgK-B3cwAsh8Y?usp=sharing', '_blank')}>
                 <FaDownload />
                 Download Sample
               </button>
