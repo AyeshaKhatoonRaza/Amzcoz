@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { FaBuilding, FaChartLine, FaMedal, FaShoppingBag, FaRocket, FaImage, FaTshirt, FaDownload } from 'react-icons/fa'
+import { FaBuilding, FaChartLine, FaMedal, FaShoppingBag, FaRocket, FaImage, FaDownload } from 'react-icons/fa'
 import { LuSparkles } from 'react-icons/lu'
 import { PiChartLineUpDuotone } from 'react-icons/pi'
 import SEO from '../../components/SEO/SEO'
@@ -414,23 +414,7 @@ const Portfolio = () => {
               </button>
             </motion.div>
 
-            <motion.div
-              className="sample-card"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-            >
-              <div className="sample-icon">
-                <FaTshirt />
-              </div>
-              <h3>Hoodie Graphics Design</h3>
-              <p>Custom hoodie and apparel graphics that make your brand stand out</p>
-              <button className="download-btn" onClick={() => window.open('https://drive.google.com/drive/folders/1vQj_Um6La3lKAK-GSxUZqM-iS0NDsj-W?usp=sharing', '_blank')}>
-                <FaDownload />
-                Download Sample
-              </button>
-            </motion.div>
-          </div>
+                      </div>
         </div>
       </section>
 
