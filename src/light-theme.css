@@ -263,7 +263,8 @@
 
 .light-theme .aas-feature-content p,
 .light-theme .aas-feature-content ul {
-    color: rgba(71, 85, 105, 0.85);
+    color: #334155;
+    font-weight: 500;
 }
 
 .light-theme .cta-box {
@@ -680,9 +681,10 @@
 }
 
 .light-theme .feature-item {
-    background: rgba(37, 99, 235, 0.08);
-    border: 1px solid rgba(0, 0, 0, 0.06);
+    background: rgba(37, 99, 235, 0.12);
+    border: 1px solid rgba(37, 99, 235, 0.25);
     color: #0f172a;
+    font-weight: 500;
 }
 
 .light-theme .feature-item:hover {

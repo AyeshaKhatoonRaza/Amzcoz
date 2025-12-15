@@ -31,13 +31,7 @@ const SEO = ({
             <meta property="og:image" content={`${siteUrl}${ogImage}`} />
             <meta property="og:site_name" content="AMZCOZ" />
 
-            {/* Twitter */}
-            <meta name="twitter:card" content={twitterCard} />
-            <meta name="twitter:url" content={canonicalUrl} />
-            <meta name="twitter:title" content={fullTitle} />
-            {description && <meta name="twitter:description" content={description} />}
-            <meta name="twitter:image" content={`${siteUrl}${ogImage}`} />
-        </Helmet>
+                    </Helmet>
     )
 }
 

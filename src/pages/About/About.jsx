@@ -73,7 +73,7 @@ const About = () => {
     <div className="about-page">
       <SEO
         title="About AMZCOZ - Your Trusted E-commerce Growth Partner"
-        description="Learn about AMZCOZ, your trusted partner for Amazon account management and e-commerce growth. 5+ years of experience, 15+ brands scaled, 98% client satisfaction. Certified Amazon specialists."
+        description="Learn about AMZCOZ, your trusted partner for Amazon account management and e-commerce growth. 5+ years of experience, 15+ brands scaled, 87% client satisfaction. Certified Amazon specialists."
         keywords="about amzcoz, e-commerce experts, amazon specialists, certified amazon agency, marketplace consultants, advertising experts, e-commerce consultants, amazon certified"
         canonical="/about"
       />

@@ -12,6 +12,7 @@ import Contact from './pages/Contact/Contact'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import { ThemeProvider } from './contexts/ThemeContext'
 import './App.css'
+import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton'
 
 function App() {
   const [showScrollTop, setShowScrollTop] = useState(false)
@@ -42,6 +43,7 @@ function App() {
               </Routes>
             </main>
             <Footer />
+            <WhatsAppButton />
             <ScrollToTop show={showScrollTop} />
             <Analytics />
           </div>
