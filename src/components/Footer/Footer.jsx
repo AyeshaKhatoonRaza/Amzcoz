@@ -2,7 +2,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaTwitter, FaFacebook, FaInstagram, FaReddit } from 'react-icons/fa'
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaWhatsapp, FaFacebook, FaInstagram, FaReddit } from 'react-icons/fa'
 import './Footer.css'
 
 const slugify = (text = '') =>
@@ -33,8 +33,13 @@ const Footer = () => {
   ]
 
   const socialLinks = [
-    { icon: FaLinkedin, url: '#', label: 'LinkedIn' },
-    { icon: FaTwitter, url: '#', label: 'Twitter' },
+    {
+      icon: FaWhatsapp,
+      url: 'https://wa.me/918007208742',
+      label: 'WhatsApp',
+      target: '_blank',
+      rel: 'noopener noreferrer'
+    },
     {
       icon: FaFacebook,
       url: 'https://www.facebook.com/profile.php?id=61583302677569',

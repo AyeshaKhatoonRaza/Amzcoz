@@ -50,7 +50,7 @@ const About = () => {
     { icon: FaUsers, value: '15+', label: 'Brands' },
     { icon: FaChartLine, value: '2x', label: 'ROAS' },
     { icon: FaAward, value: '5+', label: 'Years Experience' },
-    { icon: FaCheckCircle, value: '98%', label: 'Client Satisfaction' }
+    { icon: FaCheckCircle, value: '87%', label: 'Client Satisfaction' }
   ]
 
   const whyChoose = [
@@ -323,7 +323,7 @@ const About = () => {
               animate={teamInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <div className="team-stat-value">50+</div>
+              <div className="team-stat-value">8+</div>
               <div className="team-stat-label">Combined Years Experience</div>
             </motion.div>
             <motion.div
@@ -332,8 +332,17 @@ const About = () => {
               animate={teamInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              <div className="team-stat-value">10+</div>
-              <div className="team-stat-label">Certifications</div>
+              <div className="team-stat-value">15+</div>
+              <div className="team-stat-label">Brands</div>
+            </motion.div>
+            <motion.div
+              className="team-stat"
+              initial={{ opacity: 0, y: 20 }}
+              animate={teamInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.6 }}
+            >
+              <div className="team-stat-value">87%</div>
+              <div className="team-stat-label">Client Satisfaction</div>
             </motion.div>
           </div>
         </div>
