@@ -46,10 +46,10 @@ const Contact = () => {
   ]
 
   const serviceRegions = [
-    { icon: FaGlobe, name: 'India', flagSrc: '/images/flags/india.svg', flagAlt: 'Flag of India' },
-    { icon: FaGlobe, name: 'USA', flagSrc: '/images/flags/usa.svg', flagAlt: 'Flag of the United States' },
-    { icon: FaGlobe, name: 'UAE', flagSrc: '/images/flags/uae.svg', flagAlt: 'Flag of the United Arab Emirates' },
-    { icon: FaGlobe, name: 'UK', flagSrc: '/images/flags/uk.svg', flagAlt: 'Flag of the United Kingdom' }
+    { icon: FaGlobe, name: 'India', flagSrc: 'https://flagcdn.com/w40/in.svg', flagAlt: 'Flag of India' },
+    { icon: FaGlobe, name: 'USA', flagSrc: 'https://flagcdn.com/w40/us.svg', flagAlt: 'Flag of the United States' },
+    { icon: FaGlobe, name: 'UAE', flagSrc: 'https://flagcdn.com/w40/ae.svg', flagAlt: 'Flag of the United Arab Emirates' },
+    { icon: FaGlobe, name: 'UK', flagSrc: 'https://flagcdn.com/w40/gb.svg', flagAlt: 'Flag of the United Kingdom' }
   ]
 
   const benefits = [

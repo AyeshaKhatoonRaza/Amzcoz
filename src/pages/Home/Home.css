@@ -168,12 +168,12 @@
   overflow: hidden;
 }
 
-/* Enhanced Hero 3D Elements */
+/* Enhanced Hero 3D Elements - DISABLED FOR PERFORMANCE */
 .hero-shape {
   position: absolute;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(96, 165, 250, 0.15) 0%, rgba(96, 165, 250, 0.05) 50%, transparent 100%);
-  animation: float 20s ease-in-out infinite;
+  animation: none !important;
   box-shadow: var(--glow-blue);
 }
 
@@ -182,7 +182,7 @@
   height: 380px;
   top: -200px;
   right: -100px;
-  animation-delay: 0s;
+  animation: none !important;
   transform: perspective(1000px) rotateX(20deg) rotateY(15deg);
   box-shadow: var(--glow-blue);
 }
@@ -192,7 +192,7 @@
   height: 320px;
   bottom: -150px;
   left: -100px;
-  animation-delay: 5s;
+  animation: none !important;
   transform: perspective(1000px) rotateX(-15deg) rotateY(25deg);
   box-shadow: var(--glow-blue);
 }
@@ -203,11 +203,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) perspective(1000px) rotateX(10deg) rotateY(-20deg);
-  animation-delay: 10s;
+  animation: none !important;
   box-shadow: var(--glow-blue);
 }
 
-/* Add new 3D floating elements */
+/* Add new 3D floating elements - DISABLED FOR PERFORMANCE */
 .hero::after {
   content: '';
   position: absolute;
@@ -218,7 +218,7 @@
   background: linear-gradient(45deg, var(--accent-blue) 0%, var(--light-blue) 100%);
   border-radius: 20px;
   transform: perspective(1000px) rotateX(45deg) rotateY(45deg);
-  animation: floatRotate 15s ease-in-out infinite;
+  animation: none !important;
   box-shadow: var(--glow-blue);
   z-index: 1;
 }
@@ -233,34 +233,24 @@
   background: radial-gradient(circle, rgba(96, 165, 250, 0.3) 0%, rgba(96, 165, 250, 0.1) 100%);
   border-radius: 50%;
   transform: perspective(1000px) rotateX(-30deg) rotateY(30deg);
-  animation: floatRotate 12s ease-in-out infinite reverse;
+  animation: none !important;
   box-shadow: var(--glow-blue);
   z-index: 1;
 }
 
-/* Enhanced floating animations */
+/* Enhanced floating animations - DISABLED FOR PERFORMANCE */
 @keyframes floatRotate {
   0%, 100% {
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px);
   }
-  25% {
-    transform: perspective(1000px) rotateX(15deg) rotateY(15deg) translateY(-20px);
-  }
-  50% {
-    transform: perspective(1000px) rotateX(-10deg) rotateY(-15deg) translateY(-10px);
-  }
-  75% {
-    transform: perspective(1000px) rotateX(20deg) rotateY(-10deg) translateY(-30px);
-  }
+  /* Animation disabled */
 }
 
 @keyframes float {
   0%, 100% {
     transform: translateY(0px) rotate(0deg);
   }
-  50% {
-    transform: translateY(-30px) rotate(180deg);
-  }
+  /* Animation disabled */
 }
 
 .hero-content {
@@ -321,25 +311,25 @@
   font-weight: 600;
   color: var(--text-white);
   font-size: 0.95rem;
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: none;
   cursor: pointer;
 }
 
 .badge:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: var(--glow-blue);
-  background: rgba(96, 165, 250, 0.1);
-  border-color: var(--accent-blue);
+  transform: none;
+  box-shadow: var(--shadow-sm);
+  background: var(--glass-bg);
+  border-color: var(--glass-border);
 }
 
 .badge svg {
   color: var(--accent-blue);
   font-size: 1.1rem;
-  transition: transform 0.3s ease;
+  transition: none;
 }
 
 .badge:hover svg {
-  transform: rotate(360deg) scale(1.1);
+  transform: none;
 }
 
 .hero-visual {
@@ -358,16 +348,16 @@
   height: auto;
   border-radius: 16px;
   box-shadow: var(--glow-blue);
-  animation: float 6s ease-in-out infinite;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: none !important;
+  transition: none;
   object-fit: cover;
   background: linear-gradient(135deg, var(--space-gray) 0%, var(--primary-black) 100%);
   border: 1px solid var(--glass-border);
 }
 
 .hero-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 40px rgba(96, 165, 250, 0.6);
+  transform: none;
+  box-shadow: var(--glow-blue);
 }
 
 .hero-image:not([src]),
@@ -419,9 +409,7 @@
   padding: 1.75rem 1.25rem;
   text-align: center;
   position: relative;
-  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
-              background 0.3s ease,
-              box-shadow 0.3s ease;
+  transition: none;
 }
 
 .stat-item:not(:first-child) {
@@ -434,15 +422,15 @@
   inset: 0;
   background: radial-gradient(circle at top, rgba(59, 130, 246, 0.35), transparent 70%);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: none;
   z-index: 0;
 }
 
 .stat-item:hover,
 .stat-item:focus-visible {
-  transform: translateY(-6px);
-  background: rgba(59, 130, 246, 0.08);
-  box-shadow: 0 18px 42px -28px rgba(37, 99, 235, 0.55);
+  transform: none;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: none;
 }
 
 .stat-item:hover::before,
@@ -483,15 +471,15 @@
   box-shadow: none;
   backdrop-filter: none;
   overflow: hidden;
-  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+  transition: none;
 }
 
 .stat-card::before { content: none; }
 
 .stat-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(96, 165, 250, 0.35);
-  background: rgba(255, 255, 255, 0.02);
+  transform: none;
+  border-color: rgba(255, 255, 255, 0.12);
+  background: transparent;
 }
 
 .stat-card:hover::before { content: none; }
@@ -653,11 +641,11 @@
   padding: 2.5rem;
   border-radius: 16px;
   box-shadow: var(--shadow-sm);
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: none;
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  transform: none;
   transform-style: preserve-3d;
 }
 
@@ -669,7 +657,7 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(96, 165, 250, 0.15), transparent);
-  transition: left 0.6s ease;
+  transition: none;
 }
 
 .service-card::after {
@@ -687,7 +675,7 @@
 }
 
 .service-card:hover::before {
-  left: 100%;
+  left: -100%;
 }
 
 .service-card:hover::after {
@@ -695,10 +683,10 @@
 }
 
 .service-card:hover {
-  border-color: var(--accent-blue);
-  box-shadow: var(--glow-blue);
-  transform: translateY(-8px) scale(1.02) perspective(1000px) rotateX(2deg) rotateY(-2deg);
-  background: rgba(96, 165, 250, 0.1);
+  border-color: var(--glass-border);
+  box-shadow: var(--shadow-sm);
+  transform: none;
+  background: var(--glass-bg);
 }
 
 .service-icon {
@@ -712,9 +700,9 @@
   justify-content: center;
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: none;
   position: relative;
-  transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  transform: none;
   box-shadow: var(--glow-blue);
 }
 
@@ -730,8 +718,8 @@
 }
 
 .service-card:hover .service-icon {
-  transform: scale(1.15) rotate(5deg) perspective(1000px) rotateX(-15deg) rotateY(15deg);
-  box-shadow: 0 0 30px rgba(96, 165, 250, 0.8);
+  transform: none;
+  box-shadow: var(--glow-blue);
 }
 
 .service-card:hover .service-icon::before {
@@ -792,13 +780,13 @@
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+  transition: none;
 }
 
 .testimonial-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(59, 130, 246, 0.55);
-  background: rgba(15, 23, 42, 1);
+  transform: none;
+  border-color: rgba(148, 163, 184, 0.35);
+  background: rgba(15, 23, 42, 0.95);
 }
 
 .testimonial-quote-icon {

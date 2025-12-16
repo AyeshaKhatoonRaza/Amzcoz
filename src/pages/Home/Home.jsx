@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
+// import { motion } from 'framer-motion'
+// import { useInView } from 'react-intersection-observer'
 import {
   FaAmazon,
   FaChartLine,
@@ -25,16 +25,17 @@ import './Home.css'
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [successDetails, setSuccessDetails] = useState(null)
-  const [heroRef, heroInView] = useInView({ threshold: 0.2, triggerOnce: true })
-  const [statsRef, statsInView] = useInView({ threshold: 0.3, triggerOnce: true })
-  const [servicesRef, servicesInView] = useInView({ threshold: 0.2, triggerOnce: true })
-  const [testimonialsRef, testimonialsInView] = useInView({ threshold: 0.2, triggerOnce: true })
+  // Scroll animations disabled for performance
+  // const [heroRef, heroInView] = useInView({ threshold: 0.2, triggerOnce: true })
+  // const [statsRef, statsInView] = useInView({ threshold: 0.3, triggerOnce: true })
+  // const [servicesRef, servicesInView] = useInView({ threshold: 0.2, triggerOnce: true })
+  // const [testimonialsRef, testimonialsInView] = useInView({ threshold: 0.2, triggerOnce: true })
 
   const stats = [
     { icon: FaUsers, value: '15+', label: 'Brands', color: '#4A90E2' },
     { icon: FaChartLine, value: '2x', label: 'ROAS', color: '#2563EB' },
     { icon: FaTrophy, value: '5+', label: 'Years Experience', color: '#4A90E2' },
-    { icon: FaStar, value: '98%', label: 'Client Satisfaction', color: '#2563EB' },
+    { icon: FaStar, value: '87%', label: 'Client Satisfaction', color: '#2563EB' },
   ]
 
   const services = [
@@ -108,80 +109,46 @@ const Home = () => {
         keywords="amazon account management, amazon advertising, e-commerce growth, amazon advertising, flipkart management, myntra seller, brand enhancement, amazon optimization, advertising management, e-commerce services"
         canonical="/"
       />
-      <section className="hero moon-hero" ref={heroRef}>
+      <section className="hero moon-hero">
         <div className="container">
           <div className="moon-hero-stack">
-            <motion.h1
-              className="brand-backdrop"
-              aria-hidden
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={heroInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.8, delay: 0.15 }}
-            >
+            <h1 className="brand-backdrop" aria-hidden>
               AmzCoz
-            </motion.h1>
-            <motion.p
-              className="hero-tagline"
-              initial={{ opacity: 0, y: 6 }}
-              animate={heroInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
+            </h1>
+            <p className="hero-tagline">
               Scale your e‑commerce growth across marketplaces
-            </motion.p>
-            <motion.div
-              className="moon-wrap"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={heroInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.9, delay: 0.25 }}
-            >
+            </p>
+            <div className="moon-wrap">
               <MoonGalaxy />
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="stats-section" ref={statsRef}>
+      <section className="stats-section">
         <div className="container">
           <div className="stats-band">
             {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                className="stat-item"
-                initial={{ opacity: 0, y: 10 }}
-                animate={statsInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
+              <div key={index} className="stat-item">
                 <div className="stat-value">{stat.value}</div>
                 <div className="stat-label">{stat.label}</div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="services-section section-padding" ref={servicesRef}>
+      <section className="services-section section-padding">
         <div className="container">
-          <motion.div
-            className="section-header"
-            initial={{ opacity: 0, x: -30 }}
-            animate={servicesInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6 }}
-          >
+          <div className="section-header">
             <h2>Our Services</h2>
             <p>Comprehensive Amazon solutions to accelerate your growth</p>
-          </motion.div>
+          </div>
 
           <div className="services-grid">
             {services.map((service, index) => (
-              <motion.div
-                key={index}
-                className="service-card"
-                initial={{ opacity: 0, x: -50 }}
-                animate={servicesInView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                whileHover={{ y: -15, scale: 1.03, boxShadow: '0 25px 50px rgba(0,0,0,0.15)' }}
-              >
+              <div key={index} className="service-card">
                 <div className="service-icon">
                   <service.icon />
                 </div>
@@ -198,46 +165,29 @@ const Home = () => {
                 <Button variant="ghost" to="/services" icon={<FaArrowRight />} iconPosition="right">
                   Learn More
                 </Button>
-              </motion.div>
+              </div>
             ))}
           </div>
 
-          <motion.div
-            className="services-cta"
-            initial={{ opacity: 0, x: -30 }}
-            animate={servicesInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.8 }}
-          >
+          <div className="services-cta">
             <Button variant="primary" size="large" to="/services">
               View All Services
             </Button>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Testimonials Section */}
-      <section className="testimonials-section section-padding bg-light" ref={testimonialsRef}>
+      <section className="testimonials-section section-padding bg-light">
         <div className="container">
-          <motion.div
-            className="section-header"
-            initial={{ opacity: 0, x: 30 }}
-            animate={testimonialsInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6 }}
-          >
+          <div className="section-header">
             <h2>What Our Clients Say</h2>
             <p>Real results from real businesses</p>
-          </motion.div>
+          </div>
 
           <div className="testimonials-grid">
             {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={index}
-                className="testimonial-card"
-                initial={{ opacity: 0, y: 16 }}
-                animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                whileHover={{ y: -6 }}
-              >
+              <div key={index} className="testimonial-card">
                 <div className="testimonial-quote-icon">
                   <FaQuoteLeft />
                 </div>
@@ -249,7 +199,7 @@ const Home = () => {
                     <div className="author-company">{testimonial.company}</div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -258,13 +208,7 @@ const Home = () => {
       {/* CTA Section */}
       <section className="cta-section section-padding">
         <div className="container">
-          <motion.div
-            className="cta-content"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
+          <div className="cta-content">
             <span className="cta-eyebrow">Free Strategy Session</span>
             <h2>Ready to Accelerate Your Amazon Growth?</h2>
             <p>Book a free strategy session and discover how we can help you achieve your goals</p>
@@ -282,7 +226,7 @@ const Home = () => {
             >
               Book Strategy Session
             </Button>
-          </motion.div>
+          </div>
         </div>
       </section>
 
