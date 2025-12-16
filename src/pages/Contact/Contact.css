@@ -4,8 +4,6 @@
   padding: 8rem 0 6rem;
   background: transparent;
   overflow: hidden;
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
-  overflow-y: auto; /* Allow vertical scrolling */
 }
 
 .contact-header-background {
@@ -59,7 +57,6 @@
   grid-template-columns: 1fr 1.1fr;
   gap: 4rem;
   align-items: start;
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
 .contact-info-section {
@@ -105,7 +102,6 @@
   flex-direction: column;
   gap: 1.5rem;
   margin-bottom: 2.5rem;
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
 .contact-info-card {
@@ -185,7 +181,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
 .region-badge {
@@ -210,6 +205,17 @@
 
 .region-flag {
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.region-flag-image {
+  width: 24px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .region-name {
@@ -268,7 +274,6 @@
 .benefit-list {
   display: grid;
   gap: 1.25rem;
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
 .benefit-card {
@@ -381,7 +386,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
 .additional-feature {
@@ -434,7 +438,6 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
   margin-top: 3rem;
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
 .faq-item {
@@ -497,7 +500,6 @@
 @media (max-width: 768px) {
   .contact-header {
     padding: 6rem 0 4rem;
-    overflow-x: hidden !important; /* Force prevent horizontal scrollbar */
   }
 
   .contact-header-content h1 {
@@ -511,7 +513,6 @@
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
-    overflow-x: hidden !important; /* Force prevent horizontal scrollbar */
   }
 
   .contact-intro h2 {
@@ -534,7 +535,6 @@
 
   .form-container {
     padding: 2rem;
-    overflow-x: hidden !important; /* Prevent horizontal scrollbar in form */
   }
 
   .form-header h2 {
@@ -548,7 +548,6 @@
   .regions-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.75rem;
-    overflow-x: hidden !important; /* Force prevent horizontal scrollbar */
   }
 
   .region-badge {
@@ -561,7 +560,6 @@
 
   .contact-benefits {
     padding: 1.75rem;
-    overflow-x: hidden !important; /* Prevent horizontal scrollbar */
   }
 
   .contact-benefits h3 {
@@ -588,26 +586,17 @@
   .additional-features {
     grid-template-columns: 1fr;
     gap: 2rem;
-    overflow-x: hidden !important; /* Force prevent horizontal scrollbar */
   }
 
   .faq-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
-    overflow-x: hidden !important; /* Force prevent horizontal scrollbar */
-  }
-  
-  /* Ensure body has only one scrollbar on mobile */
-  .contact-page {
-    overflow-x: hidden !important;
-    overflow-y: auto;
   }
 }
 
 @media (max-width: 480px) {
   .contact-header {
     padding: 5rem 0 3rem;
-    overflow-x: hidden !important; /* Force prevent horizontal scrollbar */
   }
 
   .contact-header-content h1 {
@@ -662,7 +651,6 @@
 
   .service-regions {
     padding: 1.5rem;
-    overflow-x: hidden !important; /* Force prevent horizontal scrollbar */
   }
 
   .service-regions h3 {
@@ -675,6 +663,17 @@
 
   .region-flag {
     font-size: 1.35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .region-flag-image {
+    width: 20px;
+    height: 14px;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   }
 
   .region-name {
@@ -683,7 +682,6 @@
 
   .contact-benefits {
     padding: 1.5rem;
-    overflow-x: hidden !important; /* Force prevent horizontal scrollbar */
   }
 
   .contact-benefits h3 {
@@ -712,7 +710,6 @@
 
   .form-container {
     padding: 1.75rem;
-    overflow-x: hidden !important; /* Force prevent horizontal scrollbar */
   }
 
   .form-header h2 {
@@ -755,15 +752,5 @@
 
   .faq-item p {
     font-size: 0.9rem;
-  }
-  
-  /* Ensure no horizontal scrollbars on mobile */
-  .contact-page {
-    overflow-x: hidden !important;
-    overflow-y: auto;
-  }
-  
-  .container {
-    overflow-x: hidden !important;
   }
 }

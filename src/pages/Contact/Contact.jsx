@@ -1,6 +1,6 @@
 import React from 'react'
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
+// import { motion } from 'framer-motion'
+// import { useInView } from 'react-intersection-observer'
 import {
   FaPhone,
   FaEnvelope,
@@ -15,8 +15,8 @@ import SEO from '../../components/SEO/SEO'
 import './Contact.css'
 
 const Contact = () => {
-  const [headerRef, headerInView] = useInView({ threshold: 0.3, triggerOnce: true })
-  const [formRef, formInView] = useInView({ threshold: 0.2, triggerOnce: true })
+  // const [headerRef, headerInView] = useInView({ threshold: 0.3, triggerOnce: true })
+  // const [formRef, formInView] = useInView({ threshold: 0.2, triggerOnce: true })
 
   const contactInfo = [
     {
@@ -74,23 +74,18 @@ const Contact = () => {
         canonical="/contact"
       />
       {/* Header Section */}
-      <section className="contact-header" ref={headerRef}>
+      <section className="contact-header">
         <div className="contact-header-background">
           <div className="contact-shape contact-shape-1"></div>
           <div className="contact-shape contact-shape-2"></div>
         </div>
         <div className="container">
-          <motion.div
-            className="contact-header-content"
-            initial={{ opacity: 0, y: 30 }}
-            animate={headerInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8 }}
-          >
+          <div className="contact-header-content">
             <h1>Get in Touch</h1>
             <p className="contact-subtitle">
               Ready to grow your business? Request your free consultation today
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -99,13 +94,7 @@ const Contact = () => {
         <div className="container">
           <div className="contact-grid">
             {/* Contact Information */}
-            <motion.div
-              className="contact-info-section"
-              initial={{ opacity: 0, x: -30 }}
-              animate={formInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.6 }}
-              ref={formRef}
-            >
+            <div className="contact-info-section">
               <div className="contact-intro">
                 <h2>Ready to Accelerate Your Amazon Growth?</h2>
                 <p>
@@ -115,14 +104,7 @@ const Contact = () => {
 
               <div className="contact-info-cards">
                 {contactInfo.map((info, index) => (
-                  <motion.div
-                    key={index}
-                    className="contact-info-card"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={formInView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-                    whileHover={{ y: -5 }}
-                  >
+                  <div key={index} className="contact-info-card">
                     <div className="info-icon">
                       <info.icon />
                     </div>
@@ -142,18 +124,13 @@ const Contact = () => {
                         </div>
                       )}
                     </div>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
 
             {/* Contact Form */}
-            <motion.div
-              className="contact-form-section"
-              initial={{ opacity: 0, x: 30 }}
-              animate={formInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.3 }}
-            >
+            <div className="contact-form-section">
               <div className="form-container">
                 <div className="form-header">
                   <h2>Request Your Free Consultation</h2>
@@ -161,49 +138,30 @@ const Contact = () => {
                 </div>
                 <LeadForm variant="default" />
               </div>
-            </motion.div>
+            </div>
 
             {/* Service Regions & Benefits */}
-            <motion.div
-              className="contact-extras"
-              initial={{ opacity: 0, y: 30 }}
-              animate={formInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.6 }}
-            >
-              <motion.div
-                className="service-regions"
-                initial={{ opacity: 0, y: 20 }}
-                animate={formInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: 0.2 }}
-              >
+            <div className="contact-extras">
+              <div className="service-regions">
                 <h3>We Serve Globally</h3>
                 <div className="regions-grid">
                   {serviceRegions.map((region, index) => (
-                    <motion.div
-                      key={index}
-                      className="region-badge"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
+                    <div key={index} className="region-badge">
                       <span className="region-flag">
                         <img
                           src={region.flagSrc}
                           alt={region.flagAlt}
                           className="region-flag-image"
+                          loading="lazy"
                         />
                       </span>
                       <span className="region-name">{region.name}</span>
-                    </motion.div>
+                    </div>
                   ))}
                 </div>
-              </motion.div>
+              </div>
 
-              <motion.div
-                className="contact-benefits"
-                initial={{ opacity: 0, y: 20 }}
-                animate={formInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: 0.35 }}
-              >
+              <div className="contact-benefits">
                 <span className="benefits-eyebrow">Included In Every Session</span>
                 <h3>What You'll Get</h3>
                 <p className="benefits-subtitle">Actionable deliverables designed to unlock marketplace growth from day one.</p>
@@ -221,8 +179,8 @@ const Contact = () => {
                     </div>
                   ))}
                 </div>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -230,13 +188,7 @@ const Contact = () => {
       {/* Map or Additional Info Section */}
       <section className="contact-additional section-padding bg-light">
         <div className="container">
-          <motion.div
-            className="additional-content"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+          <div className="additional-content">
             <div className="additional-text">
               <h2>Why Choose AMZCOZ?</h2>
               <div className="additional-features">
@@ -270,23 +222,17 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* FAQ Section */}
       <section className="contact-faq section-padding">
         <div className="container">
-          <motion.div
-            className="section-header"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+          <div className="section-header">
             <h2>Frequently Asked Questions</h2>
             <p>Quick answers to common questions</p>
-          </motion.div>
+          </div>
 
           <div className="faq-grid">
             {[
@@ -307,17 +253,10 @@ const Contact = () => {
                 answer: 'We offer flexible pricing based on your needs. Contact us for a customized quote.'
               }
             ].map((faq, index) => (
-              <motion.div
-                key={index}
-                className="faq-item"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
+              <div key={index} className="faq-item">
                 <h3>{faq.question}</h3>
                 <p>{faq.answer}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
