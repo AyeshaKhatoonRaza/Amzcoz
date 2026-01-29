@@ -48,6 +48,7 @@ const Portfolio = () => {
     { id: 11, name: 'Tresa', logo: '/images/brands/tresa.jpg' },
     { id: 12, name: 'VegOChef', logo: '/images/brands/veg_O_vegan.png' },
     { id: 13, name: 'Zora', logo: '/images/brands/ZORA_Final_Logo.jpg' },
+    { id: 14, name: 'Down the Cove', logo: '/images/brands/down_the_cove.jpeg' },
   ]
 
   const clientReportsByBrand = [
@@ -414,7 +415,7 @@ const Portfolio = () => {
               </button>
             </motion.div>
 
-                      </div>
+          </div>
         </div>
       </section>
 
