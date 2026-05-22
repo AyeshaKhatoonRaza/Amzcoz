@@ -57,7 +57,7 @@ const About = () => {
     'Comprehensive account health and day-to-day management',
     'Expertise in product positioning and listing optimization',
     'Focus on increasing ROI, visibility, and conversions',
-    'Affordable & transparent pricing',
+    'Affordable and transparent pricing',
     'End-to-end Amazon support',
     'Serving India, USA, UAE, UK, and more'
   ]
