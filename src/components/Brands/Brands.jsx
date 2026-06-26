@@ -14,6 +14,10 @@ const brands = [
   { id: 10, name: "Angel's and Co", logo: '/images/brands/Brown Auric.jpeg' },
   { id: 11, name: "Nioax", logo: '/images/brands/Nioax Coffee.jpg' },
   { id: 12, name: "Hobbyist Nirvana", logo: '/images/brands/Hobbyist Nirvana.jpeg' },
+  { id: 13, name: "Moarmouz", logo: '/images/brands/Moarmouz.jpg' },
+  { id: 14, name: "Maw & Paw", logo: '/images/brands/Maw and Paw.jpeg' },
+  { id: 15, name: "Waggy Zone", logo: '/images/brands/Waggy Zone.jpeg' },
+  { id: 16, name: "Woof Ministry", logo: '/images/brands/Woof Ministry.jpeg' },
 ]
 
 const Brands = () => {
